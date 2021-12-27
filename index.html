@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>ShortLink</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <form class="box" name="link_form">
+             <div class="box-element textbox">
+                <a>Введите ссылку:</a>
+                <input type="text" name="link" id="box-link"></input>
+            </div>
+            <div class="box-element">
+                <input type="submit" name="button"></input>
+            </div>
+            <div class="box-element textbox" style="visibility: hidden;" id="box-response">
+                <a>Ваша сокращенная ссылка:</a>
+                <input type="text" id="response" onclick="this.select();" readonly></input>
+            </div>
+     </form>
+     <script src='javascript.js'></script>
+</body>
+</html>

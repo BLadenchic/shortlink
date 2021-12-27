@@ -1,0 +1,39 @@
+.box-element{
+margin: 0 auto;
+padding: 5;
+display: table;
+}
+.box{
+    background-color: bisque; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18;
+}
+input[type=text]{
+    width: 100%;
+    margin: 0 auto;
+}
+.textbox{
+    flex-direction: column;
+    display: flex;
+}
+.block{
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18;
+}
+body{
+    background: darkgrey;
+}
+.shortText{
+    display: block;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 50px;
+    position: relative;
+  }
+
