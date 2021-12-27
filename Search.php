@@ -7,7 +7,10 @@
         $result=mysqli_query($linkDB,$sql) or die("Ошибка ".mysqli_error($linkDB));
         $link=$result->fetch_assoc();
     if($link)
-        echo "http://shortlink".$link["link"];
-        else
-        echo "Такой страницы не существует.";
-?>
+        {
+            header("Location: http://shortlink".$link["link"],TRUE,301);
+            echo "http://shortlink".$link["link"];
+        }else
+        {echo "Такой страницы не существует.";
+        return false;
+        }?>
