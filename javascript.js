@@ -1,7 +1,8 @@
-var response= document.getElementById('response');
+var response= document.getElementById('response');//элемент, куда будет вставлен ответ
+
 document.forms.link_form.onsubmit = function(e){
     e.preventDefault();
-    var userInput=document.forms.link_form.link.value;
+    var userInput=document.forms.link_form.link.value;//значение, введенное пользователем
     userInput = userInput.replace(/^\s*|\s*$/g, '');//избавление от пробелов
     if(!check(userInput))
     {
@@ -17,7 +18,7 @@ document.forms.link_form.onsubmit = function(e){
     request.onreadystatechange=function(){
         if(request.readyState===4 &&request.status===200){
             document.getElementById("box-response").style.visibility = "visible";
-            response.value=request.responseText;
+            response.value=request.responseText;//Вставляем полученную ссылку
             Copy();
         }
     }

@@ -8,7 +8,7 @@
         $link=$result->fetch_assoc();
     if($link)
         {
-            header("Location: http://shortlink".$link["link"],TRUE,301);
+            header("Location: http://shortlink".$link["link"]);
             echo "http://shortlink".$link["link"];
         }else
         {echo "Такой страницы не существует.";
